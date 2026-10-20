@@ -1,0 +1,293 @@
+header {
+  width: 100%;
+  background-color: #FFFFFF;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 100;
+}
+
+.header-container {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  background-color: #FFFFFF;
+}
+
+.logo {
+  color: #1F3A4D;
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.logo span {
+  color: #94A3B8;
+  font-size: 22px;
+}
+.header-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+  min-width: 0;
+  gap: 35px;
+  margin-left: 25px;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 36px;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  flex: 1;
+}
+
+.header-nav a {
+  display: inline-block;
+  white-space: nowrap;
+  text-decoration: none;
+  color: #334155;
+  transition: color 0.2s ease;
+}
+
+.header-nav a:hover {
+  color: #1F3A4D;
+}
+
+.header-nav a.active {
+  color: #1F3A4D;
+  font-weight: 800;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.header-actions a {
+  color: #1F3A4D;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.header-actions a:first-child:hover {
+  text-decoration: underline;
+}
+
+.header-actions .account-label {
+  max-width: 180px;
+  overflow: hidden;
+  color: #334155;
+  text-overflow: ellipsis;
+}
+
+.header-actions .signup-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 22px;
+  background-color: #1F3A4D;
+  color: #FFFFFF;
+  border: 1px solid #1F3A4D;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+}
+
+.header-actions .signup-button:hover {
+  background-color: #162D3C;
+}
+
+.header-actions .logout-button {
+  min-height: 44px;
+  padding: 0 18px;
+  border: 1px solid #1F3A4D;
+  border-radius: 8px;
+  background: #FFFFFF;
+  color: #1F3A4D;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.header-actions .logout-button:hover:not(:disabled) {
+  background: #F3F8FB;
+}
+
+.header-actions .logout-button:disabled {
+  cursor: wait;
+  opacity: 0.7;
+}
+
+.header-actions .logout-error {
+  color: #B42318;
+  font-size: 13px;
+  white-space: normal;
+}
+
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 44px;
+  height: 44px;
+  padding: 9px;
+  border: 1px solid #E2E8F0;
+  border-radius: 8px;
+  background: #FFFFFF;
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #1F3A4D;
+  border-radius: 2px;
+  transition: transform 0.2s ease;
+}
+
+@media (max-width: 1100px) {
+  .header-container {
+    padding: 20px 30px;
+    gap: 18px;
+  }
+
+  .logo {
+    font-size: 22px;
+  }
+
+  .logo span {
+    font-size: 20px;
+  }
+
+  .header-menu {
+    gap: 18px;
+    margin-left: 10px;
+  }
+
+  .header-nav {
+    gap: 20px;
+    font-size: 14px;
+  }
+
+  .header-actions {
+    gap: 14px;
+  }
+
+  .header-actions .signup-button {
+    padding: 11px 16px;
+  }
+}
+
+@media (max-width: 760px) {
+  .header-container {
+    padding: 16px 20px;
+    flex-wrap: wrap;
+    gap: 0;
+  }
+
+  .logo {
+    font-size: 22px;
+  }
+
+  .logo span {
+    font-size: 20px;
+  }
+
+  .hamburger {
+    display: flex;
+    margin-left: auto;
+  }
+
+  .header-menu {
+    display: none;
+    flex: 0 0 100%;
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 22px;
+    margin-left: 0;
+    padding: 22px 0 8px;
+  }
+
+  .header-menu.open {
+    display: flex;
+  }
+
+  .header-nav {
+    width: 100%;
+    flex: none;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 0;
+    font-size: 15px;
+  }
+
+  .header-nav a {
+    display: block;
+    padding: 13px 4px;
+    border-bottom: 1px solid #F1F5F9;
+  }
+
+  .header-actions {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 14px;
+  }
+
+  .header-actions a {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .header-actions .account-label {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .header-actions .signup-button {
+    padding: 12px 16px;
+  }
+
+  .header-actions .logout-button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 420px) {
+  .header-container {
+    padding: 14px 16px;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .logo span {
+    font-size: 18px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .header-nav a,
+  .header-actions .signup-button,
+  .hamburger span {
+    transition: none;
+  }
+}

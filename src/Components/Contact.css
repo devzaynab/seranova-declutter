@@ -1,0 +1,286 @@
+.contact {
+  min-height: 100vh;
+  background: #FFFFFF;
+}
+
+.contact-header {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 60px 50px;
+  background: #EAF2F6;
+  text-align: center;
+}
+
+.contact-header h1 {
+  margin: 0;
+  color: #1E2933;
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.contact-breadcrumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 18px;
+  font-size: 15px;
+}
+
+.contact-breadcrumb a {
+  color: #64748B;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.contact-breadcrumb a:hover {
+  color: #1F3A4D;
+  text-decoration: underline;
+}
+
+.contact-breadcrumb span:last-child {
+  color: #1E2933;
+}
+
+.contact-content {
+  padding: 80px;
+}
+
+.contact-content h2 {
+  margin: 0 0 55px;
+  color: #1E2933;
+  font-size: 80px;
+  line-height: 1;
+  font-weight: 700;
+  text-align: left;
+}
+
+.contact-columns {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 64px;
+}
+
+.contact-left {
+  width: 100%;
+}
+
+.contact-intro {
+  max-width: 560px;
+  margin: 0 0 45px;
+  color: #64748B;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.contact-detail {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.contact-icon {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 10px;
+  background: #F3F8FB;
+  color: #1F3A4D;
+  font-size: 18px;
+}
+
+.contact-detail h3 {
+  margin: 0 0 5px;
+  color: #1E2933;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.contact-detail p {
+  margin: 0;
+  color: #64748B;
+  font-size: 15px;
+}
+
+.get-location {
+  display: inline-block;
+  margin-top: 40px;
+  color: #1F3A4D;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid #1F3A4D;
+  padding-bottom: 4px;
+}
+
+.get-location:hover {
+  color: #162D3C;
+}
+
+.contact-right {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.form-group {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  color: #1E2933;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px;
+
+  border: 1px solid #E2E8F0;
+  border-radius: 8px;
+
+  outline: none;
+  background: #FFFFFF;
+
+  color: #1E2933;
+  font-family: inherit;
+  font-size: 15px;
+
+  transition: border-color 0.2s ease,
+              box-shadow 0.2s ease;
+}
+
+.form-group input {
+  height: 52px;
+}
+
+.form-group textarea {
+  min-height: 160px;
+  resize: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #1F3A4D;
+  box-shadow: 0 0 0 3px rgba(31, 58, 77, 0.08);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #94A3B8;
+}
+
+.contact-right button {
+  width: fit-content;
+  height: 50px;
+  padding: 0 28px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: #1F3A4D;
+  color: #FFFFFF;
+
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.contact-right button:hover {
+  background: #162D3C;
+}
+
+
+
+
+@media (max-width: 900px) {
+
+  .contact-header {
+    padding: 60px 30px;
+  }
+
+  .contact-content {
+    padding: 60px 30px;
+  }
+
+  .contact-content h2 {
+    font-size: 60px;
+  }
+
+  .contact-columns {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  .contact-header {
+    padding: 40px 20px;
+  }
+
+  .contact-header h1 {
+    font-size: 28px;
+  }
+
+  .contact-content {
+    padding: 42px 20px;
+  }
+
+  .contact-content h2 {
+    margin-bottom: 32px;
+    font-size: 42px;
+    line-height: 1.1;
+  }
+
+  .contact-columns {
+    gap: 40px;
+  }
+
+  .contact-intro {
+    margin-bottom: 30px;
+    font-size: 16px;
+  }
+
+  .contact-detail {
+    align-items: flex-start;
+    gap: 14px;
+  }
+
+  .contact-detail p {
+    overflow-wrap: anywhere;
+  }
+
+  .contact-right {
+    gap: 18px;
+  }
+
+  .contact-right button {
+    width: 100%;
+  }
+}

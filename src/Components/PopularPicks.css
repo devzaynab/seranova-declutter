@@ -1,0 +1,329 @@
+.popular-picks {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 80px 70px;
+  background: #FFFFFF;
+}
+
+.popular-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 24px;
+  margin-bottom: 35px;
+}
+
+.popular-label {
+  margin: 0 0 12px;
+  color: #1F3A4D;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.popular-header h2 {
+  margin: 0;
+  color: #1E2933;
+  font-size: 40px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.popular-text {
+  margin: 12px 0 0;
+  color: #64748B;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.popular-explore {
+  flex-shrink: 0;
+  margin: 0;
+  color: #1F3A4D;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.popular-explore:hover {
+  color: #64748B;
+}
+
+.popular-products {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 14px;
+  width: 100%;
+}
+
+.popular-card {
+  box-sizing: border-box;
+  min-width: 0;
+  padding: 8px;
+  background: #FFFFFF;
+  border: none;
+  border-radius: 11px;
+  box-shadow: 0 3px 12px rgba(31, 58, 77, 0.08);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.popular-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(31, 58, 77, 0.14);
+}
+
+
+.popular-card-image {
+  position: relative;
+  width: 100%;
+  height: 145px;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #F1F5F9;
+}
+
+.popular-card-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.popular-card:hover .popular-card-image img {
+  transform: scale(1.04);
+}
+
+
+.popular-condition {
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  max-width: calc(100% - 14px);
+  box-sizing: border-box;
+  padding: 4px 6px;
+  border-radius: 5px;
+  background: #fff;
+  color: #1F3A4D;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+
+.popular-card-info {
+  padding: 9px 2px 3px;
+}
+
+.popular-card-info h3 {
+  margin: 0 0 6px;
+  color: #1E2933;
+  font-size: 13px;
+  line-height: 1.4;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+
+.popular-price {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin: 0;
+  color: #1F3A4D;
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 700;
+}
+
+.popular-location {
+  color: #64748B;
+  font-size: 10px;
+  font-weight: 500;
+}
+
+@media (max-width: 1000px) {
+  .popular-picks {
+    padding: 60px 24px;
+  }
+
+  .popular-header {
+    gap: 16px;
+    margin-bottom: 28px;
+  }
+
+  .popular-header h2 {
+    font-size: 32px;
+  }
+
+  .popular-text {
+    font-size: 14px;
+  }
+
+  .popular-explore {
+    font-size: 13px;
+  }
+
+  .popular-products {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .popular-card {
+    padding: 6px;
+    border-radius: 9px;
+  }
+
+  .popular-card-image {
+    height: 105px;
+    border-radius: 6px;
+  }
+
+  .popular-condition {
+    top: 5px;
+    left: 5px;
+    padding: 3px 4px;
+    font-size: 8px;
+  }
+
+  .popular-card-info {
+    padding: 8px 1px 2px;
+  }
+
+  .popular-card-info h3 {
+    font-size: 11px;
+  }
+
+  .popular-price {
+    gap: 3px;
+    font-size: 10px;
+  }
+
+  .popular-location {
+    font-size: 9px;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .popular-picks {
+    padding: 45px 16px;
+  }
+
+  .popular-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 14px;
+    margin-bottom: 25px;
+  }
+
+  .popular-header h2 {
+    font-size: 28px;
+  }
+
+  .popular-label {
+    margin-bottom: 9px;
+    font-size: 12px;
+  }
+
+  .popular-text {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .popular-explore {
+    font-size: 13px;
+  }
+
+  .popular-products {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+  }
+
+  .popular-card {
+    padding: 8px;
+    border-radius: 11px;
+  }
+
+  .popular-card-image {
+    height: 140px;
+    border-radius: 7px;
+  }
+
+  .popular-condition {
+    top: 6px;
+    left: 6px;
+    padding: 4px 6px;
+    font-size: 9px;
+  }
+
+  .popular-card-info {
+    padding: 10px 2px 3px;
+  }
+
+  .popular-card-info h3 {
+    font-size: 13px;
+  }
+
+  .popular-price {
+    gap: 4px;
+    font-size: 12px;
+  }
+
+  .popular-location {
+    font-size: 10px;
+  }
+}
+
+
+@media (max-width: 360px) {
+  .popular-picks {
+    padding: 40px 12px;
+  }
+
+  .popular-header h2 {
+    font-size: 25px;
+  }
+
+  .popular-products {
+    gap: 10px;
+  }
+
+  .popular-card {
+    padding: 6px;
+  }
+
+  .popular-card-image {
+    height: 115px;
+  }
+
+  .popular-card-info h3 {
+    font-size: 12px;
+  }
+
+  .popular-price {
+    font-size: 11px;
+  }
+
+  .popular-location {
+    font-size: 9px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .popular-card,
+  .popular-card-image img,
+  .popular-explore {
+    transition: none;
+  }
+
+  .popular-card:hover {
+    transform: none;
+  }
+
+  .popular-card:hover .popular-card-image img {
+    transform: none;
+  }
+}

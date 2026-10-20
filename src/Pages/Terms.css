@@ -1,0 +1,164 @@
+.terms {
+  min-height: 100vh;
+  background: #FFFFFF;
+  box-sizing: border-box;
+}
+
+.terms-header {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 60px 24px;
+  background: #EAF2F6;
+  text-align: center;
+}
+
+.terms-header h1 {
+  margin: 0;
+  color: #1E2933;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.terms-breadcrumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 15px;
+  font-size: 15px;
+}
+
+.terms-breadcrumb a {
+  color: #1F3A4D;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.terms-breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.terms-breadcrumb span:last-child {
+  color: #1E2933;
+}
+
+.terms-content {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1010px;
+  margin: 0 auto;
+  padding: 60px 40px;
+}
+
+.terms-content p {
+  margin: 0 0 20px;
+  color: #64748B;
+  font-size: 16px;
+  line-height: 1.7;
+  overflow-wrap: break-word;
+}
+
+.terms-content h2 {
+  margin: 35px 0 12px;
+  color: #1E2933;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.terms-date {
+  color: #1F3A4D !important;
+  font-size: 14px !important;
+  font-weight: 600;
+}
+
+.terms-content a {
+  color: #1F3A4D;
+  font-weight: 600;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+
+.terms-content a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+  .terms-header {
+    padding: 50px 24px;
+  }
+
+  .terms-content {
+    max-width: 850px;
+    padding: 50px 32px;
+  }
+
+  .terms-content h2 {
+    font-size: 21px;
+  }
+}
+
+@media (max-width: 760px) {
+  .terms-header {
+    padding: 40px 20px;
+  }
+
+  .terms-header h1 {
+    font-size: 27px;
+  }
+
+  .terms-breadcrumb {
+    gap: 8px;
+    font-size: 14px;
+  }
+
+  .terms-content {
+    padding: 35px 24px;
+  }
+
+  .terms-content p {
+    margin-bottom: 18px;
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  .terms-content h2 {
+    margin: 28px 0 10px;
+    font-size: 20px;
+  }
+
+  .terms-date {
+    font-size: 13px !important;
+  }
+}
+
+
+@media (max-width: 420px) {
+  .terms-header {
+    padding: 32px 16px;
+  }
+
+  .terms-header h1 {
+    font-size: 24px;
+  }
+
+  .terms-breadcrumb {
+    font-size: 13px;
+    gap: 6px;
+  }
+
+  .terms-content {
+    padding: 28px 18px;
+  }
+
+  .terms-content p {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  .terms-content h2 {
+    margin-top: 25px;
+    font-size: 18px;
+  }
+}
